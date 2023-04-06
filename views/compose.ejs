@@ -3,9 +3,19 @@
 
 <h1>Compose.</h1>
 
+
+
 <form action="/compose" method="post">
-    <input type="text" name="composeInput" id="">
-    <button type="submit" name="button">Publish</button>
+    <div class="form-group">
+        <label for="inputTitle">Title</label>
+        <input type="text" name="composeInputTitle" class="form-control" id="inputTitle" a placeholder="Enter Title">
+      </div>
+
+      <div class="form-group">
+        <label for="inputPost">Post</label>
+        <textarea class="form-control" name ="composeInputPost" rows="5" a placeholder="Enter Your Post here"></textarea>
+      </div>
+    <button type="submit" class="btn btn-primary" name="button">Publish</button>
 </form>
 
 
